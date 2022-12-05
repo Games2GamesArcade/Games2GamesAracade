@@ -3,6 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Birthday Card</title>
+	
+	<center>Back to Home Page <a href="index.html">Click Here</a></center>
     <!-- Google Font-->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
@@ -12,11 +14,18 @@
     <link rel="stylesheet" href="styleb.css" />
   </head>
   <body>
+  <br>
+  <br> <br>  <br> <br> <br> <br>
+  <center><label> <h1> Enter your name </h1></label>
+   <input type="text" id="user1" value="">
+   
+   
+	 	 <button onclick="submit_clk()">submit</button></center>
     <div class="card">
       <div class="outside">
         <div class="front">
           <p>Happy Birthday</p>
-          <div class="cake">
+	          <div class="cake">
             <div class="top-layer"></div>
             <div class="middle-layer"></div>
             <div class="bottom-layer"></div>
@@ -26,9 +35,29 @@
         <div class="back"></div>
       </div>
       <div class="inside">
-        <p>Custom Wish for Birthday</p>
+	        <p >Happy birthday  </p>	
+			<h3 id ="GFG"> </h3>	
+			
+         
         <h1>&#127873;</h1>
       </div>
     </div>
+	<script>
+	function submit_clk()
+	{
+	 var txt = document.getElementById("user1").value;
+	 
+	 document.getElementById("GFG").innerHTML = txt;
+     
+	 
+	 }
+     </script>
+	 
+    
+ 
+     
+    
   </body>
+  
+  
 </html>
